@@ -18,10 +18,9 @@
 /* Tło całej strony listy */
 body {
   background-color: #0b0d17;
-  /* Podmień poniższy URL na własną grafikę anime (najlepiej w wysokiej rozdzielczości) */
   background-image:
     linear-gradient(135deg, rgba(15, 12, 35, 0.82), rgba(25, 14, 45, 0.72)),
-    url("https://raw.githubusercontent.com/STERBEN2077/shinden-css/main/style.jpg");
+    url("./style.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
