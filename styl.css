@@ -1,0 +1,121 @@
+/* =========================================
+   Shinden Custom List - Anime Glass Theme
+   ========================================= */
+
+:root {
+  --bg-overlay: rgba(12, 14, 24, 0.78);
+  --card-bg: rgba(22, 26, 44, 0.72);
+  --card-hover: rgba(34, 40, 68, 0.88);
+  --accent-primary: #ff4fa3;   /* sakura / neon pink */
+  --accent-secondary: #5ce1e6; /* cyberpunk cyan */
+  --text-main: #f4f6ff;
+  --text-muted: #b0b7d6;
+  --border-glow: rgba(255, 79, 163, 0.35);
+  --radius: 14px;
+  --transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Tło całej strony listy */
+body {
+  background-color: #0b0d17;
+  /* Podmień poniższy URL na własną grafikę anime (najlepiej w wysokiej rozdzielczości) */
+  background-image:
+    linear-gradient(135deg, rgba(15, 12, 35, 0.82), rgba(25, 14, 45, 0.72)),
+    url("https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1920&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--text-main);
+  font-family: "Segoe UI", "Inter", system-ui, -apple-system, sans-serif;
+}
+
+/* Ogólne karty, panele i wiersze listy */
+.panel,
+.card,
+.box,
+.well,
+table tbody tr,
+[class*="list"] [class*="item"],
+[class*="anime"] [class*="row"] {
+  background: var(--card-bg) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+/* Efekt najechania na pozycję z listy */
+table tbody tr:hover,
+[class*="list"] [class*="item"]:hover,
+[class*="anime"] [class*="row"]:hover {
+  background: var(--card-hover) !important;
+  border-color: var(--border-glow);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 79, 163, 0.16);
+}
+
+/* Okładki anime / mangi / nowelek */
+img[src*="cover"],
+img[src*="anime"],
+img[src*="manga"],
+.cover img,
+table img {
+  border-radius: 10px;
+  transition: var(--transition);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+}
+
+table tbody tr:hover img,
+[class*="item"]:hover img {
+  transform: scale(1.04);
+  box-shadow: 0 0 16px rgba(92, 225, 230, 0.35);
+}
+
+/* Linki i tytuły */
+a {
+  color: var(--text-main);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--accent-secondary);
+  text-shadow: 0 0 10px rgba(92, 225, 230, 0.45);
+}
+
+/* Nagłówki i akcenty */
+h1, h2, h3, .title, .header-title {
+  letter-spacing: 0.4px;
+  text-shadow: 0 2px 12px rgba(255, 79, 163, 0.3);
+}
+
+/* Przyciski i odznaki */
+button,
+.btn,
+.badge,
+.label,
+.tag {
+  border-radius: 999px;
+  transition: var(--transition);
+}
+
+button:hover,
+.btn:hover {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 14px rgba(255, 79, 163, 0.4);
+}
+
+/* Pasek przewijania */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d101d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 999px;
+}
