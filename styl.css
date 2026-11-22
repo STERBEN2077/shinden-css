@@ -1,6 +1,6 @@
 body {
     background-color: #070b14 !important;
-    background-image: url('https://raw.githubusercontent.com/sppf2/Shinden-css/main/bg.jpg') !important;
+    background-image: url('https://raw.githubusercontent.com/STERBEN2077/shinden-css/refs/heads/main/style.jpg') !important;
     background-attachment: fixed !important;
     background-size: cover !important;
     background-position: center !important;
@@ -22,12 +22,12 @@ body {
 }
 
 .list-header, .banner-container, #header-banner {
-    background-image: url('https://raw.githubusercontent.com/sppf2/Shinden-css/main/banner.jpg') !important;
+    background-image: url('https://raw.githubusercontent.com/STERBEN2077/shinden-css/refs/heads/main/baner.jpg') !important;
     background-size: cover !important;
     background-position: center top !important;
     height: 420px !important;
     border-bottom: 2px solid #2563eb !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.😎, 0 0 15px rgba(56, 189, 248, 0.3) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 15px rgba(56, 189, 248, 0.3) !important;
 }
 
 .list-menu, .sidebar, .list-content, .table-container, .box {
@@ -54,7 +54,7 @@ h1, h2, .section-title {
     color: #ffffff !important;
     text-transform: uppercase !important;
     letter-spacing: 2px !important;
-    text-shadow: 0 0 10px rgba(56, 189, 248, 0.😎 !important;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.8) !important;
 }
 
 .sidebar a, .list-menu li a {
