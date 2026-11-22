@@ -1,120 +1,81 @@
-/* =========================================
-   Shinden Custom List - Anime Glass Theme
-   ========================================= */
-
-:root {
-  --bg-overlay: rgba(12, 14, 24, 0.78);
-  --card-bg: rgba(22, 26, 44, 0.72);
-  --card-hover: rgba(34, 40, 68, 0.88);
-  --accent-primary: #ff4fa3;   /* sakura / neon pink */
-  --accent-secondary: #5ce1e6; /* cyberpunk cyan */
-  --text-main: #f4f6ff;
-  --text-muted: #b0b7d6;
-  --border-glow: rgba(255, 79, 163, 0.35);
-  --radius: 14px;
-  --transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-/* Tło całej strony listy */
 body {
-  background-color: #0b0d17;
-  background-image:
-    linear-gradient(135deg, rgba(15, 12, 35, 0.82), rgba(25, 14, 45, 0.72)),
-    url("./style.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: var(--text-main);
-  font-family: "Segoe UI", "Inter", system-ui, -apple-system, sans-serif;
+    background-color: #070b14 !important;
+    background-image: url('https://raw.githubusercontent.com/STERBEN2077/shinden-css/main/style.jpg') !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: center !important;
+    color: #cbd5e1 !important;
+    font-family: 'Segoe UI', Roboto, sans-serif !important;
 }
 
-/* Ogólne karty, panele i wiersze listy */
-.panel,
-.card,
-.box,
-.well,
-table tbody tr,
-[class*="list"] [class*="item"],
-[class*="anime"] [class*="row"] {
-  background: var(--card-bg) !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: var(--radius);
-  transition: var(--transition);
+.l-header, header, nav {
+    background: rgba(5, 8, 17, 0.92) !important;
+    border-bottom: 1px solid #1e3a5f !important;
+    box-shadow: 0 4px 20px rgba(0, 168, 255, 0.15) !important;
 }
 
-/* Efekt najechania na pozycję z listy */
-table tbody tr:hover,
-[class*="list"] [class*="item"]:hover,
-[class*="anime"] [class*="row"]:hover {
-  background: var(--card-hover) !important;
-  border-color: var(--border-glow);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(255, 79, 163, 0.16);
+.l-header .active, nav a.active {
+    background: linear-gradient(180deg, rgba(0, 168, 255, 0.25) 0%, rgba(0, 168, 255, 0.05) 100%) !important;
+    border-bottom: 3px solid #38bdf8 !important;
+    color: #ffffff !important;
+    text-shadow: 0 0 8px #38bdf8 !important;
 }
 
-/* Okładki anime / mangi / nowelek */
-img[src*="cover"],
-img[src*="anime"],
-img[src*="manga"],
-.cover img,
-table img {
-  border-radius: 10px;
-  transition: var(--transition);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+.list-header, .banner-container, #header-banner {
+    background-image: url('https://raw.githubusercontent.com/sppf2/Shinden-css/main/banner.jpg') !important;
+    background-size: cover !important;
+    background-position: center top !important;
+    height: 420px !important;
+    border-bottom: 2px solid #2563eb !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.😎, 0 0 15px rgba(56, 189, 248, 0.3) !important;
 }
 
-table tbody tr:hover img,
-[class*="item"]:hover img {
-  transform: scale(1.04);
-  box-shadow: 0 0 16px rgba(92, 225, 230, 0.35);
+.list-menu, .sidebar, .list-content, .table-container, .box {
+    background: rgba(9, 14, 28, 0.85) !important;
+    border: 1px solid #2563eb !important;
+    border-radius: 6px !important;
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.25), inset 0 0 20px rgba(14, 165, 233, 0.1) !important;
+    backdrop-filter: blur(6px) !important;
 }
 
-/* Linki i tytuły */
-a {
-  color: var(--text-main);
-  transition: var(--transition);
+input[type="text"], .search-input {
+    background: rgba(6, 10, 20, 0.9) !important;
+    border: 1px solid #1e40af !important;
+    color: #e2e8f0 !important;
+    border-radius: 4px !important;
 }
 
-a:hover {
-  color: var(--accent-secondary);
-  text-shadow: 0 0 10px rgba(92, 225, 230, 0.45);
+input[type="text"]:focus {
+    border-color: #38bdf8 !important;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.4) !important;
 }
 
-/* Nagłówki i akcenty */
-h1, h2, h3, .title, .header-title {
-  letter-spacing: 0.4px;
-  text-shadow: 0 2px 12px rgba(255, 79, 163, 0.3);
+h1, h2, .section-title {
+    color: #ffffff !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.😎 !important;
 }
 
-/* Przyciski i odznaki */
-button,
-.btn,
-.badge,
-.label,
-.tag {
-  border-radius: 999px;
-  transition: var(--transition);
+.sidebar a, .list-menu li a {
+    color: #94a3b8 !important;
+    transition: all 0.2s ease !important;
 }
 
-button:hover,
-.btn:hover {
-  border-color: var(--accent-primary);
-  box-shadow: 0 0 14px rgba(255, 79, 163, 0.4);
+.sidebar a:hover, .list-menu li.active a {
+    color: #ffffff !important;
+    background: rgba(56, 189, 248, 0.15) !important;
+    text-shadow: 0 0 8px #38bdf8 !important;
+    border-left: 3px solid #38bdf8 !important;
 }
 
-/* Pasek przewijania */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+tr, .anime-item, .list-item {
+    background: rgba(12, 19, 38, 0.75) !important;
+    border-bottom: 1px solid rgba(37, 99, 235, 0.3) !important;
+    transition: 0.2s !important;
 }
 
-::-webkit-scrollbar-track {
-  background: #0d101d;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--accent-primary), var(--accent-secondary));
-  border-radius: 999px;
+tr:hover, .anime-item:hover, .list-item:hover {
+    background: rgba(30, 58, 138, 0.4) !important;
+    box-shadow: inset 0 0 12px rgba(56, 189, 248, 0.3) !important;
 }
