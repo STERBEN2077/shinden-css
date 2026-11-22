@@ -1,6 +1,6 @@
 body {
     background-color: #070b14 !important;
-    background-image: url('https://raw.githubusercontent.com/STERBEN2077/shinden-css/refs/heads/main/stylev2.jpg') !important;
+    background-image: url('https://raw.githubusercontent.com/STERBEN2077/shinden-css/refs/heads/main/style.jpg') !important;
     background-attachment: fixed !important;
     background-size: cover !important;
     background-position: center !important;
@@ -22,7 +22,7 @@ body {
 }
 
 .list-header, .banner-container, #header-banner {
-    background-image: url('https://raw.githubusercontent.com/STERBEN2077/shinden-css/refs/heads/main/stylev2.jpg') !important;
+    background-image: url('https://raw.githubusercontent.com/STERBEN2077/shinden-css/refs/heads/main/style.jpg') !important;
     background-size: cover !important;
     background-position: center top !important;
     height: 420px !important;
